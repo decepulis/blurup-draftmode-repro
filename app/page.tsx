@@ -13,11 +13,11 @@ export default async function Home() {
   return (
     <div>
       <h1>BlurUp + Draft Mode Reproduction</h1>
-      <h2>This hangs in draft mode and in production</h2>
+      <h2>This hangs in production, and in draft mode</h2>
       <Suspense fallback={<p>Loading...</p>}>
         <Reproduction />
       </Suspense>
-      <h2>Enable draft mode</h2>
+      <h2>Draft mode</h2>
       {isEnabled ? (
         <p>
           Draft mode is enabled.{" "}
