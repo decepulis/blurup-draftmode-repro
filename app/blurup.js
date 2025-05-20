@@ -13,7 +13,6 @@ async function imageDimensionsFromStream(stream) {
   let chunks = [];
 
   for await (const chunk of stream) {
-    console.log(chunk);
     chunks = [...chunks, ...chunk];
     return { width: 1280, height: 720 };
   }
